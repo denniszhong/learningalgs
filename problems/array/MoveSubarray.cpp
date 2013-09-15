@@ -1,6 +1,5 @@
-
 #include <stdlib.h>
-#include "stdio.h"
+#include <stdio.h>
 
 void ReverseArray(int arr[], int start, int end)
 {
@@ -62,7 +61,7 @@ void MoveSubArray(int arr[], int length, int index)
 	OutputArray(arr, length);
 }
 
-int main()
+int main(void)
 {
 	int arr[1] = {0};
 	
@@ -77,4 +76,6 @@ int main()
 	int arr3[11] = {1, 2, 3, 4, 6, 7, 8, 12, 13, 14, 15};
 	MoveSubArray(arr3, sizeof(arr3) / sizeof(int), 3);
 	MoveSubArray(arr3, sizeof(arr3) / sizeof(int), 15);
+
+	return 0;
 }
