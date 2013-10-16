@@ -22,12 +22,12 @@ void ReverseArray(int arr[], int start, int end)
 void OutputArray(int arr[], int length)
 {
 	int i = 0;
-	printf_s("Array: ");
+	printf("Array: ");
 	for (i = 0; i < length; i++)
 	{
-		printf_s("%d ", arr[i]);
+		printf("%d ", arr[i]);
 	}
-	printf_s("\n");
+	printf("\n");
 }
 
 
@@ -138,17 +138,17 @@ bool FindThreeNumsWithSumZero(int arr[], int length, int* pNum1, int* pNum2, int
 
 void FindThreeNumsWithSumZero_Test_Internal(int arr[], int length, int* pNum1, int* pNum2, int* pNum3)
 {
-	printf_s("From ");
+	printf("From ");
 	OutputArray(arr, length);
-	printf_s("Find 3 items sum as 0 :\n");
+	printf("Find 3 items sum as 0 :\n");
 
 	if (FindThreeNumsWithSumZero(arr, length, pNum1, pNum2, pNum3))
 	{
-		printf_s("Found 3 numbers: %d + %d + %d = 0\n\n\n", *pNum1, *pNum2, *pNum3);
+		printf("Found 3 numbers: %d + %d + %d = 0\n\n\n", *pNum1, *pNum2, *pNum3);
 	}
 	else
 	{
-		printf_s("No match found!\n\n\n");
+		printf("No match found!\n\n\n");
 	}
 }
 

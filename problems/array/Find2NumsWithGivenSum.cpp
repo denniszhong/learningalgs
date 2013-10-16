@@ -1,3 +1,9 @@
+//
+// Compile:
+// gcc Find2NumsWithGivenSum.cpp -o D:\temp\Find2NumsWithGivenSum.exe
+//
+
+
 #include <stdio.h>
 
 
@@ -19,12 +25,12 @@ void ReverseArray(int arr[], int start, int end)
 void OutputArray(int arr[], int length)
 {
 	int i = 0;
-	printf_s("Array: ");
+	printf("Array: ");
 	for (i = 0; i < length; i++)
 	{
-		printf_s("%d ", arr[i]);
+		printf("%d ", arr[i]);
 	}
-	printf_s("\n");
+	printf("\n");
 }
 
 /*
@@ -108,34 +114,34 @@ int main()
 	int key = 20;
 	int skip = 0;
 
-	printf_s("From the follow array\n");
+	printf("From the follow array\n");
 	OutputArray(arr, length);
-	printf_s("Find a pair items sum as %d :\n", key);
+	printf("Find a pair items sum as %d :\n", key);
 
 	if (FindTwoNumsWithSpecialSum(arr, length, key, &num1, &num2, skip))
 	{
-		printf_s("Found the pair: (%d, %d)\n", num1, num2);
+		printf("Found the pair: (%d, %d)\n", num1, num2);
 	}
 	else
 	{
-		printf_s("Didn't find!\n");
+		printf("Didn't find!\n");
 	}
 
 
 	// Try with item we need skip...
 	skip = -4;
 
-	printf_s("\n\nFrom the follow array\n");
+	printf("\n\nFrom the follow array\n");
 	OutputArray(arr, 10);
-	printf_s("Find a pair items sum as %d :\n", key);
+	printf("Find a pair items sum as %d :\n", key);
 
 	if (FindTwoNumsWithSpecialSum(arr, sizeof(arr)/sizeof(int), key, &num1, &num2, skip, true))
 	{
-		printf_s("Found the pair: (%d, %d)\n", num1, num2);
+		printf("Found the pair: (%d, %d)\n", num1, num2);
 	}
 	else
 	{
-		printf_s("Didn't find!\n");
+		printf("Didn't find!\n");
 	}
 
 	return 0;
